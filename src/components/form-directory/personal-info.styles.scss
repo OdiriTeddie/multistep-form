@@ -1,0 +1,29 @@
+.form {
+    background-color: hsl(var(--clr-neutral-700));
+    padding: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: var(--fs-300);
+        color: hsl(var(--clr-primary-300));
+        font-weight: var(--fw-medium);
+    }
+}
+
+.form-input {
+    padding: 0.5rem;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-medium);
+    // color: hsl(var(--clr-neutral-400));
+    color: black;
+    border: 1px solid hsl(var(--clr-neutral-400));
+    border-radius: 5px;
+
+    &::placeholder {
+        color: hsl(var(--clr-neutral-300));
+    }
+}

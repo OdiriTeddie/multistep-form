@@ -1,0 +1,94 @@
+:root {
+  --clr-primary-300: 213, 96%, 18%;
+  --clr-primary-400: 243, 100%, 62%;
+  --clr-primary-500: 228, 100%, 84%;
+  --clr-primary-600: 206, 94%, 87%;
+  --clr-primary-700: 354, 84%, 57%;
+
+  --clr-neutral-300: 231, 11%, 63%;
+  --clr-neutral-400: 229, 24%, 87%;
+  --clr-neutral-500: 217, 100%, 97%;
+  --clr-neutral-600: 231, 100%, 99%;
+  --clr-neutral-700: 0, 0%, 100%;
+
+  --fs-300: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+  --fs-400: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  --fs-500: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  --fs-600: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  --fs-700: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+  --fs-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+  --fs-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+  --fs-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  background-color: hsl(var(--clr-neutral-500));
+}
+
+h1, 
+h2,
+h3 {
+  line-height: 1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1rem;
+  gap: 1rem;
+}
+
+.flow-space > * + * {
+  margin-top : var(--spacer, 1rem);
+}

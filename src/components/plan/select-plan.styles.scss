@@ -1,0 +1,74 @@
+.selectPlan {
+    padding: 2rem;
+}
+
+
+
+.planbox{
+    border: 2px solid hsl(var(--clr-neutral-400));
+    border-radius: 8px;
+    max-width: 20rem;
+
+    flex-direction: row;
+
+
+    padding-block: 1rem;
+    padding-inline: .5rem;
+
+}
+
+
+.plan-switcher {
+    background-color: hsl(var(--clr-neutral-500));
+    padding-block: 1rem;
+    border-radius: 8px;
+
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.switcher-wrapper {
+    width: 3.1rem;
+    background-color: hsl(var(--clr-primary-300));
+    border-radius: 20px;
+    position: relative;
+}
+
+.switcher-wrapper span {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: hsl(var(--clr-neutral-700));
+    position: absolute;
+    top: 50%;
+    left: 5px;
+
+    transform: translateY(-50%);
+
+    transition: all 0.2s ease;
+}
+
+.switcher {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 1000;
+}
+
+.switcher-wrapper .switcher:checked + span {
+    left: 28px;
+}
+
+@media(min-width: 756px) {
+
+     .planbox {
+        flex-direction: column;
+     }
+     
+    .plan-wrapper {
+        flex-direction: row;
+    }
+
+}
