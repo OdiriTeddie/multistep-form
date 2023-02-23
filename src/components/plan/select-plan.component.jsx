@@ -1,4 +1,6 @@
-import SectionTitle from "../shared/section-title.component"
+import SectionTitle from '../shared/section-title.component'
+
+
 import ArcadeIcon from '../../assets/images/icon-arcade.svg'
 import AdvancedIcon from '../../assets/images/icon-advanced.svg'
 import ProIcon from '../../assets/images/icon-pro.svg'

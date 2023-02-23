@@ -1,0 +1,19 @@
+.thank-you {
+   --gap: 1.5rem;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+
+   
+   padding-block: 5rem;
+   padding-inline: 1.5rem;
+
+   &__message h2 {
+      font-size: var(--fs-700);
+   }
+
+   &__message p {
+      color: hsl(var(--clr-neutral-300));
+   }
+}

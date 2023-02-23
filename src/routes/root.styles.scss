@@ -1,0 +1,40 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    isolation: isolate;
+}
+
+.wrapper {
+    max-width: 60rem;
+    width: 90%;
+    margin: auto;
+    background-color: hsl(var(--clr-neutral-700));
+    margin-top: 6.5rem;
+
+    border-radius: 8px;
+    // outline: 1px solid red;
+
+}
+
+.wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    // outline: 1px solid red;
+}
+
+
+@media(min-width: 756px) {
+    .wrapper {
+        display: flex;
+        height: 70vh;
+        padding: 1rem;
+    }
+
+
+    .wrapper-inner {
+        width: 80%;
+        padding-inline: 5.5rem;
+    }
+}

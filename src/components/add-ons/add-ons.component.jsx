@@ -23,9 +23,6 @@ const AddOns = () => {
          
     }
 
-
-
-
     return (
         <div class="addons flex">
             <SectionTitle 
