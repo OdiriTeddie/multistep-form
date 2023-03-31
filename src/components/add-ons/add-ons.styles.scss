@@ -1,6 +1,10 @@
 
 .addons {
     padding: 2rem;
+
+    h3 {
+        font-size: var(--fs-400);
+    }
 }
 
 .addon-month{
@@ -13,11 +17,12 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     border: 2px solid hsl(var(--clr-neutral-400));
 
     &--checked{
-        border: 2px solid red;
+        border: 1px solid hsl(var(--clr-primary-300));
+        background-color: hsl(var(--clr-primary-600), 0.1);
     }
     
     div:last-of-type {
@@ -26,8 +31,8 @@
 }
 
 .addons-box input[type="checkbox"] {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
 
     // appearance: none;
     background-color: red;

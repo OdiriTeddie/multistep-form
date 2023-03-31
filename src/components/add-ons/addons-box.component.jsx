@@ -1,14 +1,14 @@
-
+import './add-ons.styles.scss'
 
 
 
 const AddonsBox = (props) => {
-    // const defaultChecked = checked ? checked : false;
     
     return(
         <div className= {props.checked ? 'addons-box addons-box--checked flex' : 'addons-box flex'   }>
             <input 
                 type="checkbox" 
+                name= {props.name}
                 checked = {props.checked}
                 onChange = {props.onChange}
             />
